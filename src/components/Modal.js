@@ -8,7 +8,7 @@ function Modal({ selectedImg, setSelectedImg }) {
   };
   return (
     <div className="backdrop" onClick={handleClick}>
-      <img src={selectedImg} alt="selectedImage"></img>/>
+      <img src={selectedImg} alt="selectedImage" />
     </div>
   );
 }
