@@ -1,3 +1,4 @@
+import ImageDisplay from "./components/ImageDisplay";
 import ImageUpload from "./components/ImageUpload";
 
 const App = () => {
@@ -5,6 +6,7 @@ const App = () => {
     <div>
       <h1>PIXABOOK</h1>
       <ImageUpload />
+      <ImageDisplay />
     </div>
   );
 };
