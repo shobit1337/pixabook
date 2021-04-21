@@ -19,8 +19,12 @@ const ImageUpload = () => {
   };
   return (
     <form>
-      <input type="file" onChange={uploadHandler} />;
-      <div>
+      {" "}
+      <label>
+        <input type="file" onChange={uploadHandler} />
+        <span>+</span>
+      </label>
+      <div className="output">
         {error && <div>{error}</div>}
         {file && <div>{file.name}</div>}
         {file && <ProgressBar file={file} setFile={setFile} />}

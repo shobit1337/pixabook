@@ -7,7 +7,7 @@ const App = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (
-    <div>
+    <div className="App">
       <h1>PIXABOOK</h1>
       <ImageUpload />
       <ImageDisplay setSelectedImg={setSelectedImg} />

@@ -3,13 +3,7 @@ import "firebase/storage";
 import "firebase/firestore";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCu0GSx_1YU_WYQXY3mxZkenyAHIci5hQM",
-  authDomain: "pixabook-tminus5.firebaseapp.com",
-  projectId: "pixabook-tminus5",
-  storageBucket: "pixabook-tminus5.appspot.com",
-  messagingSenderId: "605236583948",
-  appId: "1:605236583948:web:ed934ab98105a93b6a1829",
-  measurementId: "G-WGHKEEG71C",
+  //Firebase config here
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
