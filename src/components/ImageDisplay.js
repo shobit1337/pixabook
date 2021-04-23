@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function ImageDisplay({ setSelectedImg }) {
   const { docs } = useFirestore("images");
-  console.log(docs);
+  // console.log(docs);
 
   return (
     <div className="img-grid">
@@ -18,7 +18,13 @@ function ImageDisplay({ setSelectedImg }) {
             key={doc.id}
             onClick={() => setSelectedImg(doc.url)}
           >
-            <img src={doc.url} alt="uploaded" />
+            <motion.img
+              src={doc.url}
+              alt="uploaded pic"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            />
           </motion.div>
         ))}
     </div>
