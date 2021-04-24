@@ -30,17 +30,26 @@ body {
   font-size: 2.6rem;
 }
 
+.login-upload {
+  text-align: center;
+  border: 2px solid #1da1f2;
+  background-color: #fff;
+  display: block;
+  margin: 10px auto;
+  padding: 1.1rem;
+}
+
 /* upload form styles */
-form {
+.upload-form {
   margin: 30px auto 10px;
   text-align: center;
 }
-label input {
+.upload-label input {
   height: 0;
   width: 0;
   opacity: 0;
 }
-label {
+.upload-label {
   display: block;
   width: 30px;
   height: 30px;
@@ -52,7 +61,7 @@ label {
   font-weight: bold;
   font-size: 24px;
 }
-label:hover {
+.upload-label:hover {
   background: var(--primary);
   color: white;
 }

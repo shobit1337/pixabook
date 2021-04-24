@@ -18,9 +18,10 @@ const ImageUpload = () => {
       setError("Please select an image files (png/jpeg)");
     }
   };
+
   return (
-    <form>
-      <label>
+    <form className="upload-form">
+      <label className="upload-label">
         <input type="file" onChange={uploadHandler} />
         <span>+</span>
       </label>
