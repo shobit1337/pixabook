@@ -8,7 +8,7 @@ const useFirestore = (collection) => {
       .collection(collection)
       .orderBy("createdAt", "desc")
       .onSnapshot((snap) => {
-        const document = [];
+        let document = [];
         snap.forEach((doc) => {
           document.push({ ...doc.data(), id: doc.id });
         });

@@ -17,12 +17,13 @@ const useStorage = (file) => {
         setProgress(uploadPercentage);
       },
       (err) => {
+        console.log("Error in putting file abd percentage.");
         setError(err);
       },
       async () => {
         const url = await storageRef.getDownloadURL();
         const createdAt = timestamp();
-        collectionRef.add({ url, createdAt });
+        await collectionRef.add({ url, createdAt });
         setUrl(url);
       }
     );
