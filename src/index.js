@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import firebase from 'firebase';
+import 'firebase/firestore';
 import App from './App';
-
-const firebase = require('firebase');
-require('firebase/firestore');
 
 firebase.initializeApp({
   apiKey: 'AIzaSyCXv3V_rYVPfRgtpr0HyBxi_N00L8TRVAA',
