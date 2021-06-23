@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 
-const ImageUpload = () => {
+const ImageUpload = ({ currentUser }) => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
+  const { push } = useHistory();
 
   const allowedTypes = ["image/png", "image/jpeg"];
 
@@ -21,10 +23,16 @@ const ImageUpload = () => {
 
   return (
     <form className="upload-form">
-      <label className="upload-label">
-        <input type="file" onChange={uploadHandler} />
-        <span>+</span>
-      </label>
+      {currentUser ? (
+        <label className="upload-label">
+          <input type="file" onChange={uploadHandler} />
+          <span>+</span>
+        </label>
+      ) : (
+        <button className="btn login-btn" onClick={() => push("./login")}>
+          Login to upload
+        </button>
+      )}
       <div className="output">
         {error && <div className="error">{error}</div>}
         {file && <div>{file.name}</div>}

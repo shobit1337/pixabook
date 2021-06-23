@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import AuthModal from "./components/AuthModal";
+// import AuthModal from "./components/AuthModal";
 import AuthProvider from "./contexts/AuthContext";
-import ImageDisplay from "./components/ImageDisplay";
-import ImageUpload from "./components/ImageUpload";
-import Modal from "./components/Modal";
+// import ImageDisplay from "./components/ImageDisplay";
+// import ImageUpload from "./components/ImageUpload";
+// import Modal from "./components/Modal";
 //react-router stuff
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import PrivateRoute from "./routes/PrivateRoute";
+// import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 //pages
 import Homepage from "./pages/Homepage";
